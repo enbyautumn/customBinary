@@ -1,12 +1,13 @@
-<script>
-function translate() {
-  string = document.getElementById("bin").value
-}
-</script>
 <label for="1">1s:</label>
 <input type="number" id="1" name="1"><br>
 <label for="2">0s:</label>
 <input type="number" id="2" name="2"><br>
 <label for="bin">Binary:</label>
 <input type="number" id="bin" name="bin"><br>
-<button onClick="translate()">Translate</button>
+<button onclick="translate()" id="button">Translate</button>
+<script>
+var button = document.getElementById("button")
+function translate() {
+  string = document.getElementById("bin").value
+}
+</script>
