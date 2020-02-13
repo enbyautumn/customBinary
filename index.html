@@ -1,7 +1,12 @@
-<label for="fname">1s:</label>
-<input type="number" id="fname" name="fname"><br>
-<label for="fname">0s:</label>
-<input type="number" id="fname" name="fname"><br>
-<label for="fname">Binary:</label>
-<input type="number" id="fname" name="fname"><br>
+<label for="1">1s:</label>
+<input type="number" id="1" name="1"><br>
+<label for="2">0s:</label>
+<input type="number" id="2" name="2"><br>
+<label for="bin">Binary:</label>
+<input type="number" id="bin" name="bin"><br>
 <button onClick="translate">Translate</button>
+<script>
+  function translate(){
+    console.log(document.getElementById("bin").value)
+    console.log(document.getElementById("0").value)
+    console.log(document.getElementById("1").value)
